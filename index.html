@@ -1,18 +1,114 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Online Resume Builder</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Builder</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f8;
+    }
+
+    .homepage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: white;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .homepage h1 {
+      font-size: 2.8em;
+      color: #1a1a1a;
+      margin-bottom: 20px;
+    }
+
+    .homepage p {
+      color: #555;
+      font-size: 1.1em;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .homepage .btn-primary {
+      background-color: #007bff;
+      color: white;
+      padding: 14px 32px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .homepage .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    .template-buttons {
+      display: none;
+      text-align: center;
+      margin-top: 60px;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .template-buttons h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .template-buttons .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      margin: 10px;
+      background: #00796b;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1.2em;
+      transition: background 0.3s ease;
+    }
+
+    .template-buttons .btn:hover {
+      background: #004d40;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <h1>Create Your Resume </h1>
-  <p style="font-family: 'Times New Roman', Times, serif;">"Your career journey begins with a great resume — let's build it together."</p>
-  <p>----choose a resume template----</p>
-  <div class="template-buttons">
-    <a href="templates/classic.html" class="btn">Classic</a>
-    <a href="templates/modern.html" class="btn">Modern</a>
-    <a href="templates/creative.html" class="btn">Creative</a>
+  <div class="homepage">
+    <h1>Resume Templates</h1>
+    <p>Each resume template is designed to follow the exact rules you need to get hired faster.<br />
+    Use our resume templates and start building your dream career today!</p>
+    <button class="btn-primary" onclick="showTemplates()">Create my resume</button>
   </div>
+
+  <div class="template-buttons" id="templateSection">
+    <h2>Choose a Template</h2>
+    <a class="btn" href="templates/classic.html">Classic</a>
+    <a class="btn" href="templates/modern.html">Modern</a>
+    <a class="btn" href="templates/creative.html">Creative</a>
+  </div>
+
+  <script>
+    function showTemplates() {
+      document.getElementById("templateSection").style.display = "block";
+      window.scrollTo({ top: document.getElementById("templateSection").offsetTop, behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
