@@ -1,0 +1,106 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #c2f3e9, #446d6a);
+  color: #333;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: #2c3e50;
+}
+
+p {
+    font-size: 1.5em;
+    color: rgb(169, 81, 136);
+}
+
+.template-buttons {
+  margin-top: 30px;
+}
+
+.template-buttons .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  margin: 20px;
+  background: #00796b;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.2em;
+  transition: background 0.3s ease;
+}
+
+.template-buttons .btn:hover {
+  background: #004d40;
+}
+
+.resume {
+  background: white;
+  padding: 40px;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.resume input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 1.1em;
+  margin: 10px 0 20px;
+  padding: 5px;
+  outline: none;
+}
+
+.resume input:focus {
+  border-bottom-color: #00796b;
+}
+
+.resume section {
+  margin: 30px 0;
+}
+
+.resume h2 {
+  margin-bottom: 10px;
+  color: #00796b;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+button {
+  background: #00796b;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1em;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #004d40;
+}
+
+.resume.classic {
+  border-left: 8px solid #37474f;
+}
+
+.resume.modern {
+  border-left: 8px solid #26a69a;
+  background: #f8f9fa;
+}
+
+.resume.creative {
+  border-left: 10px solid #fb8c00;
+  background: #fff3e0;
+  font-family: 'Courier New', Courier, monospace;
+  color: #333;
+}
