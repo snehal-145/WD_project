@@ -15,6 +15,7 @@ body {
   p {
       font-size: 1.5em;
       color: rgb(169, 81, 136);
+     font-family: 'Times New Roman', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .template-buttons {
